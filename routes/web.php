@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +17,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('demo', function (){
+    $slug = request('slug');
+
+    return view('demo', array(
+        'slug'=>$slug
+    ));
+
+});
+
+Route::get('/posts/{slug}', function ($slug){
+   return view('posts', array(
+       'slug'=>$slug
+   ));
+});
+
+Route::get('/category/{slug}', [CategoryController::class, 'index'])->name('category.index');
