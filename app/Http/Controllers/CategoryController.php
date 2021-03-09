@@ -11,9 +11,7 @@ class CategoryController extends Controller
 {
     public function index($user_id){
 
-        $data = DB::table("vp_users")->first();
-
-        dd($data->email);
+        return $user_id;
 
     }
 }

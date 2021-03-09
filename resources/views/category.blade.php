@@ -1,10 +1,8 @@
-<!Doctype html>
-<html>
-<head>
-    <title>Category</title>
-</head>
-<body>
+@extends('layout')
 
+@section('content')
 
-</body>
-</html>
+    kkkkkk
+
+@endsection
+

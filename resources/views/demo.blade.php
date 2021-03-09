@@ -1,11 +1,8 @@
-<!Doctype html>
-<html>
-<head>
-    <title>Demo</title>
-</head>
-<body>
+@extends('layout')
 
-    <h1> {{ $slug  }} </h1>
+@section('content')
 
-</body>
-</html>
+    kkkkkk
+
+@endsection
+
